@@ -1,14 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Button from 'react-bootstrap/Button';
+
 
 class Header extends React.Component {
   render () {
     return (
-      <header>
-        <h1>These are a few of my favorite things...</h1>
-        <ul>
-          <li onClick={() => {this.props.handleView('home')}}>main list</li>
-          <li onClick={() => {this.props.handleView('addFavorite')}}>add a favorite</li>
-        </ul>
+      <header className="header">
+        <h1 className="title">These are a few of my favorite things...</h1>
+        <div className="style">
+        <Button size="lg" variant="info" onClick={() => {this.props.handleView('addFavorite')}}>Add a Favorite</Button>
+        </div>
       </header>
     )
   }
