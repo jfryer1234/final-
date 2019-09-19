@@ -1,9 +1,8 @@
-class CreatePosts < ActiveRecord::Migration[6.0]
+class CreateFavorites < ActiveRecord::Migration[6.0]
   def change
-    create_table :posts do |t|
-      t.string :author
-      t.string :title
-      t.text :content
+    create_table :favorites do |t|
+      t.string :name
+      t.string :description
 
       t.timestamps
     end
