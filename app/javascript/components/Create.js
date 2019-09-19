@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 
 class Create extends React.Component {
   constructor() {
@@ -33,17 +34,20 @@ class Create extends React.Component {
 
   render () {
     return (
+      <div className="form-div">
       <form onSubmit={this.handleSubmit}>
         <label>
-          name
-          <input type="text" placeholder="your name" id="name" value={this.state.name} onChange={this.handleChange}/>
+          What is your new favorite thing?...
+          <input type="text" placeholder="name / type" id="name" value={this.state.name} onChange={this.handleChange}/>
         </label>
         <label>
-          description
-          <input type="text" placeholder="description" id="description" value={this.state.description} onChange={this.handleChange}/>
+          Write a description...
+          <input type="text" placeholder="describe it here" id="description" value={this.state.description} onChange={this.handleChange}/>
         </label>
-        <input type="submit" value="add"/>
+        <br />
+        <Button size="lg" variant="outline-info" type="submit" block>Add</Button>
       </form>
+    </div>
     )
   }
 }

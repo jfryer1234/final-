@@ -13,3 +13,133 @@
  *= require_tree .
  *= require_self
  */
+
+  @import url("https://fonts.googleapis.com/css?family=Chilanka&display=swap");
+
+ /* ==================
+ | | Variables
+ ================== */
+
+  :root {
+    --darkest: #6D7993;
+    --darker: #96858F;
+    --medium: #9099A2;
+    --lighter: #D6D5D5;
+  }
+
+ /* ==================
+ | | MOBILE VIEW
+ ================== */
+
+   /* ==== GENERAL ==== */
+
+   body {
+     background-image: url("/images/backgroun1.jpeg");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     margin: 0;
+     color: var(--darkest);
+     font-family: 'Chilanka', cursive;
+
+   }
+
+   .container {
+     margin: 0 auto;
+     min-width: 375px;
+     max-width: 100%;
+   }
+
+   .align-center {
+     margin: 0 auto;
+     text-align: center;
+     font-family: 'Chilanka', cursive;
+   }
+
+   /* ==== HEADER ==== */
+
+   .title {
+     background-color: #45103E;
+     width: 90%;
+     padding: 20px;
+     margin-top: 40px;
+     margin-left: 40px;
+     font-size: 3.5em;
+     font-family: 'Chilanka', cursive;
+     color: #17a2b8;
+   }
+
+.style {
+  margin-left: 600px;
+  margin-top: 55px;
+}
+
+
+/* main  */
+
+.main-content {
+  align-items: center;
+
+}
+
+   /* ==== CREATE FORM ==== */
+
+   .form-div {
+     border: 1px solid #17a2b8;
+     border-radius: 5px;
+     margin: 0 auto;
+     margin-top: 40px;
+     width: 40%;
+     background-color: var(--lighter);
+     padding: 30px;
+     color: #45103E;
+   }
+
+
+
+     .form-div input:hover {
+       background-color: var(--lighter);
+       color: #45103E;
+       border: 1px solid #45103E;
+       margin: 3px;
+     }
+
+     .form-div label {
+       font-size: 20px;
+     }
+
+     .form-div select {
+       width: 100%;
+       margin-bottom: 20px;
+       height: 30px;
+       font-size: 16px;
+     }
+
+
+
+
+   /* footer  */
+
+   .space {
+     height: 80px;
+   }
+
+   footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 75px;
+  }
+
+    footer a, footer a:visited {
+      color: #17a2b8;
+    }
+
+  .footer-links {
+    margin-left: 40px;
+    align-items: center;
+  }

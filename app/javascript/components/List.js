@@ -1,22 +1,17 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
 
 class List extends React.Component {
   render () {
     return (
-      <article>
-        <div className="post-header">
+      <div className="form-div">
           <h4>{this.props.favoriteData.name}</h4>
-        </div>
-        <div className="post-body">
           {this.props.favoriteData.description}
-        </div>
-        <div className="post-options">
           <ul>
-            <li onClick={() => {this.props.handleView('editFavorite', this.props.favoriteData)}}>edit favorite</li>
-            <li onClick={() => {this.props.handleDelete(this.props.favoriteData.id)}}>delete favorite</li>
+            <Button size="lg" variant="outline-info"  onClick={() => {this.props.handleView('editFavorite', this.props.favoriteData)}} block>edit favorite</Button>
+            <Button size="lg" variant="outline-info" onClick={() => {this.props.handleDelete(this.props.favoriteData.id)}} block>delete favorite</Button>
           </ul>
-        </div>
-      </article>
+          </div>
     )
   }
 }

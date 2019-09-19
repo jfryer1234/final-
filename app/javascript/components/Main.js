@@ -13,7 +13,7 @@ class Main extends React.Component {
   }
 
   fetchFavorites = () => {
-    fetch('/api/favorites')
+    fetch('/favorites/')
       .then(data => data.json())
       .then(jData => {
         this.setState({ favorites: jData })
@@ -82,7 +82,6 @@ class Main extends React.Component {
   render () {
     return (
       <main>
-        <h1>{this.props.view.pageTitle}</h1>
         { this.props.view.page === 'home'
           ? this.state.favorites.map((favoriteData) => (
             <List
