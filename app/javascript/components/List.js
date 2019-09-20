@@ -6,7 +6,7 @@ class List extends React.Component {
     return (
       <div className="form-div">
           <h4>{this.props.favoriteData.name}</h4>
-          {this.props.favoriteData.description}
+          <h5>{this.props.favoriteData.description}</h5>
           <ul>
             <Button size="lg" variant="outline-info"  onClick={() => {this.props.handleView('editFavorite', this.props.favoriteData)}} block>edit favorite</Button>
             <Button size="lg" variant="outline-info" onClick={() => {this.props.handleDelete(this.props.favoriteData.id)}} block>delete favorite</Button>

@@ -86,6 +86,8 @@
 
 }
 
+
+
    /* ==== CREATE FORM ==== */
 
    .form-div {
@@ -97,6 +99,7 @@
      background-color: var(--lighter);
      padding: 30px;
      color: #45103E;
+     text-align: center;
    }
 
 
